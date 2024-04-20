@@ -1,0 +1,412 @@
+.App{
+    color: #387c3c;
+    background-color: #4CAF50;
+}
+
+.App-header {
+    box-sizing:content-box;
+    padding: 1px;
+    margin-bottom: 5px;
+    align-items:center;
+    justify-content:center;
+    color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* Aqui modificamos los 3 botones de usuario, carrito y configuraciones*/
+.custom-button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: underline; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 20px; /* Borde redondeado */
+  transition-duration: 0.4s; /* Duración de la transición */
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.custom-button:hover {
+  background-color: #387c3c; /* Cambio de color de fondo al pasar */
+  color: black; /* Cambio de color del texto al pasar */
+}
+
+/* Aqui modificamos el h1, donde esta RABE Libreria */
+
+.main-title{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    text-align:center;
+    padding: 30px 60px;
+    margin-bottom: 0;
+}
+
+/* Aqui modificamos los estilos de la barra buscadora */
+.search-bar{
+    border: 10px #ccc;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+}
+
+.search-bar:focus {
+    border-color: #4CAF50;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+  background-color: #4CAF50; /* Color de fondo */
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor:pointer;
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.search-button:hover {
+  background-color: #387c3c; /* Cambio de color de fondo al pasar */
+}
+
+/* Estilos para la seccion de libros relacionados */
+.related-books {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.related-books h2 {
+  font-size: 30px;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.related-books .book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.related-books .book-container .book-card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.related-books .book-container .book-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-books .book-container .book-card img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.related-books .book-container .book-card p {
+  margin-bottom: 5px;
+}
+
+/* Aqui tenemos un leve cambio en los estilos de la descripcion de los libros */
+.description-box {
+  background-color: gainsboro; /* Color que combime con el fondo */
+  color: white; /* Texto en color blanco */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 8px; /* Borde redondeado */
+  margin-top: 10px; /* Margen superior */
+}
+
+/* Aqui tenemos el apartado para modificar la forma en la que se muestran los libros bucados */
+
+.book-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-box {
+  background-color: rgba(204, 204, 204, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.related-books {
+  margin-top: 20px;
+}
+
+.related-books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.related-book {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.related-book p {
+  margin-bottom: 5px;
+}
+
+.left-content {
+  flex: 1;
+  max-width: 200px; /* Ancho máximo del contenedor */
+  background-color: rgba(204, 204, 204, 0.3); /* Color de fondo desvanecido */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.left-content img {
+  width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  border-radius: 8px; /* Aplicar borde redondeado a la imagen */
+  margin-bottom: 5px; /* Reducir el espacio inferior entre la imagen y el texto */
+}
+
+/* Aqui es el espacio para el diseño del registro o inicio de sesion */
+
+/* Estilos para la ventana modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilos para el contenido de la ventana modal */
+.modal-content {
+  text-align: center;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Estilos para el formulario de usuario */
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para los campos de entrada */
+.user-form label {
+  margin-bottom: 5px;
+}
+
+.user-form input {
+  margin-left: 0.5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Estilos para los botones de enviar y cambiar de formulario */
+.submit-button, .toggle-button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #021c38;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover, .toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.close{
+    text-decoration: underline;
+    font-size: 20px;
+}
+ .modal-content h2{
+    text-align: center;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-color: #007bff;
+ }
+
+
+/* Apartado de estilos para el carrito */ 
+.cart-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.cart-modal .modal-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  position: relative; /* Para que el botón de cerrar se posicione correctamente */
+}
+
+.cart-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item .item-info {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item .thumbnail img {
+  width: 50px;
+  height: 70px;
+}
+
+.cart-item .details {
+  margin-left: 10px;
+}
+
+.cart-item .quantity-controls button {
+  margin-right: 5px;
+}
+
+.clear-cart-button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: underline; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 20px; /* Borde redondeado */
+  transition-duration: 0.4s; /* Duración de la transición */
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+
+}
+
+.total-price{
+    color:black;
+    text-decoration: underline;
+    margin-left: 10px;
+
+}
+
+.detalles-pedido{
+    color:black;
+    text-align: center;
+    align-content: center;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.quantity-button{
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: underline; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 2px 1px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 15px; /* Borde redondeado */
+  transition-duration: 0.4s; /* Duración de la transición */
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+.remove-button{
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: underline; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 2px 1px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 15px; /* Borde redondeado */
+  transition-duration: 0.4s; /* Duración de la transición */
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 0.5px;
+  margin-top: 55px;
+}
+
+
+
+
